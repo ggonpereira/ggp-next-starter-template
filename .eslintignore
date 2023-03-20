@@ -1,1 +1,8 @@
 /*.js
+*.svg
+*.css
+*.spec.tsx
+*.test.*
+*.stories.*
+/node_modules
+/build

@@ -20,6 +20,8 @@
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "test": "jest",
     "test:watch": "jest --watch",
+    "ts:check": "yarn tsc --noEmit --skipLibCheck",
+    "prepare": "husky install",
     "postgenerate": "yarn lint --fix"
   },
   "dependencies": {
