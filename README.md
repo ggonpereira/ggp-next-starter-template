@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a [Next.js](https://nextjs.org/) project template to make the initial setup of projects easy
 
 ## Getting Started
 
-First, run the development server:
+First, use the template to create your Next app.
 
-```bash
-npm run dev
+```bash=
+npx create-next-app --example https://github.com/ggonpereira/ggp-next-starter-template <PROJECT_NAME>
 # or
+yarn create next-app --example https://github.com/ggonpereira/ggp-next-starter-template <PROJECT_NAME>
+```
+
+Then, after cloning, you can start your project by:
+
+```bash=
 yarn dev
 # or
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying the files inside `src` folder.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Differentials
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project uses [Atomic Design](https://atomicdesign.bradfrost.com/) principles, so inside the `components` folder, we have `atoms`, `molecules`, `organisms` and `layouts`. This structure is used to separate the responsibility of the components, making it easier to read and maintain.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+It also starts with a built-in component generator, that will create several files (test, interface, main component, style files, etc) mapped to the `atoms` folder. If your component represents a `molecule`, for example, you just need to move it to the correct folder inside `components`.
 
-## Learn More
+## To-do
 
-To learn more about Next.js, take a look at the following resources:
+I still have a lot of improvements to do in this repository, some of them are:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Upload to npm
+- [ ] Add Storybook
+- [ ] Improve initial configuration
+- [ ] Make it executable by running `npx ggp-next-starter-template` or `yarn create ggp-next-starter-template`
