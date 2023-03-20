@@ -1,0 +1,50 @@
+{
+  "name": "ggp-next-starter-template",
+  "description": "Custom React project template using different technologies",
+  "version": "0.1.0",
+  "tags": [
+    "react",
+    "next",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggonpereira/next-starter-template.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "postgenerate": "yarn lint --fix"
+  },
+  "dependencies": {
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.9",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/babel__generator": "^7.6.4",
+    "@types/jest-axe": "^3.5.5",
+    "@types/styled-components": "^5.1.26",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "jest-axe": "^7.0.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "plop": "^3.1.2",
+    "prettier": "^2.8.4"
+  }
+}

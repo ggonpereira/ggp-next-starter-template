@@ -1,0 +1,18 @@
+import * as React from 'react'
+import { render, waitFor } from '@testing-library/react'
+import { axe } from '@/utils/test-utils'
+import { {{capitalize componentName}} } from './{{capitalize componentName}}'
+
+describe('<{{capitalize componentName}} />', () => {
+	const testId = 'component-{{kebabCase componentName}}-id'
+
+	it('should render the {{capitalize componentName}} component with no a11y violations', async () => {
+		const { queryByTestId, container } = render(
+			<{{capitalize componentName}} testId={testId} />
+		)
+		await waitFor(() => expect(queryByTestId(testId)).toBeTruthy())
+
+		const acessibilityResults = await axe(container.innerHTML)
+		expect(acessibilityResults).toHaveNoViolations()
+	})
+})
